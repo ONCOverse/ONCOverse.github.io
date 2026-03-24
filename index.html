@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONCOverse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: rgb(190, 190, 190);
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .home {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      gap: 2rem;
+    }
+
+    .home img {
+      width: 300px;
+      max-width: 80vw;
+      pointer-events: none;
+    }
+
+    .home a {
+      color: #0063aa;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.2s;
+    }
+
+    .home a:hover {
+      color: #fd7627;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles"></div>
+  <div class="home">
+    <img src="assets/logo.svg" alt="ONCOverse Logo">
+    <a href="mailto:coordination@oncoverse.de">coordination@oncoverse.de</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles', 'assets/particles.json');
+  </script>
+
+    <footer>
+    <p>© 2024 ONCOverse. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
